@@ -1,0 +1,68 @@
+### Create a new user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "email": "user1@example.com"
+}
+
+### List all users
+GET http://localhost:8080/users
+
+### Create another user
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "username": "user2",
+  "email": "user2@example.com"
+}
+
+### List all users again
+GET http://localhost:8080/users
+
+### User 1 creates a new poll
+POST http://localhost:8080/polls
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "question": "What's your favorite color?",
+  "publishedAt": "2023-01-01T00:00:00Z",
+  "validUntil": "2023-12-31T23:59:59Z",
+  "voteOptions": [
+      {"caption": "Red", "presentationOrder": 1},
+      {"caption": "Blue", "presentationOrder": 2}
+    ]
+}
+
+### List polls
+GET http://localhost:8080/polls
+
+### User 1 votes on the poll
+POST http://localhost:8080/votes
+Content-Type: application/json
+
+{
+  "username": "user1",
+  "pollId": "ab1b9b41-3cc3-4505-8b4e-b6ccab86e2c2",
+  "voteOptionId": "Red"
+}
+
+### User 1 changes his vote
+PUT http://localhost:8080/votes/efdf89b2-9237-4d09-9575-88966ba1e35a
+Content-Type: application/json
+
+{
+  "caption": "Blue"
+}
+
+### List votes for a poll
+GET http://localhost:8080/votes/polls/ab1b9b41-3cc3-4505-8b4e-b6ccab86e2c2/votes
+
+### Delete the one poll
+DELETE http://localhost:8080/polls/ab1b9b41-3cc3-4505-8b4e-b6ccab86e2c2
+
+### List votes
+GET http://localhost:8080//votes/polls/ab1b9b41-3cc3-4505-8b4e-b6ccab86e2c2
