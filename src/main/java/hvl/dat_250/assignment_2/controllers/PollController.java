@@ -7,7 +7,6 @@ import hvl.dat_250.assignment_2.service.VoteOptionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import hvl.dat_250.assignment_2.domain.Poll;
 import hvl.dat_250.assignment_2.domain.User;
 import java.util.UUID;
 

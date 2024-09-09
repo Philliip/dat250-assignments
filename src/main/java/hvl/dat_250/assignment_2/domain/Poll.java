@@ -12,12 +12,12 @@ public class Poll {
     private User user;
     private List<VoteOption> voteOptions;
 
-    // Default constructor
+
     public Poll() {
         this.voteOptions = new ArrayList<>();
     }
 
-    // Parameterized constructor
+
     public Poll(String id, String question, Instant publishedAt, Instant validUntil, User user, List<VoteOption> voteOptions) {
         this.id = id;
         this.question = question;
@@ -27,7 +27,7 @@ public class Poll {
         this.voteOptions = voteOptions;
     }
 
-    // Getters and setters
+
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
 

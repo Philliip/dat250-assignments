@@ -7,17 +7,15 @@ public class VoteDTO {
     private String pollId;
     private String voteOptionId;
 
-    // Default constructor
+
     public VoteDTO() {}
 
-    // Parameterized constructor
     public VoteDTO(String username, String pollId, String voteOptionId) {
         this.username = username;
         this.pollId = pollId;
         this.voteOptionId = voteOptionId;
     }
 
-    // Getters and setters
     public String getUsername() {
         return username;
     }

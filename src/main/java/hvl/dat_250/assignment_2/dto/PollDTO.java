@@ -11,7 +11,7 @@ public class PollDTO {
     private Instant validUntil;
     private List<VoteOption> voteOptions;
 
-    // Getters and setters
+
     public String getUsername() {
         return username;
     }

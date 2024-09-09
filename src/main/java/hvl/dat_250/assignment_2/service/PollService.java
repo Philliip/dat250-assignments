@@ -1,7 +1,6 @@
 package hvl.dat_250.assignment_2.service;
 
 import  hvl.dat_250.assignment_2.domain.Poll;
-import hvl.dat_250.assignment_2.domain.User;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
