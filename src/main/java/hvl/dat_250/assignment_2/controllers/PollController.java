@@ -12,6 +12,7 @@ import java.util.UUID;
 
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/polls")
 public class PollController {

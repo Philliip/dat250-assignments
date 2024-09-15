@@ -59,7 +59,7 @@ Content-Type: application/json
 }
 
 ### List votes for a poll
-GET http://localhost:8080/votes/polls/ab1b9b41-3cc3-4505-8b4e-b6ccab86e2c2/votes
+GET http://localhost:8080/votes/polls/97a4676b-9b38-4740-bb36-ee0298873786/votes
 
 ### Delete the one poll
 DELETE http://localhost:8080/polls/ab1b9b41-3cc3-4505-8b4e-b6ccab86e2c2
