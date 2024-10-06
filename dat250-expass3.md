@@ -6,4 +6,4 @@ I made simple components as was mentioned in the assignment description: `Create
 handle basic request to create a user, create a poll and vote in the created poll.
 
 ## Conclusion
-This assignment gave me and overview into web interface technologies.
+This git assignment gave me and overview into web interface technologies.

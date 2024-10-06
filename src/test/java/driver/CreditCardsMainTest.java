@@ -1,18 +1,14 @@
-package no.hvl.dat250.jpa.tutorial.creditcards.driver;
-
-import no.hvl.dat250.jpa.tutorial.creditcards.*;
-
+package driver;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import no.hvl.dat250.jpa.tutorial.creditcards.*;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.Optional;
 import java.util.Set;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class CreditCardsMainTest {

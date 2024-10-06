@@ -22,6 +22,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation("com.fasterxml.jackson.core:jackson-databind")
+    implementation group: 'com.rabbitmq', name: 'amqp-client', version: '5.22.0'
 }
 
 tasks.named('test') {

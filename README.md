@@ -5,3 +5,4 @@ report for every week assignment is in `dat250-expassN.md` files where `N` repre
 - [Week 2 - dat250-expass2.md](./dat250-expass2.md)
 - [Week 3 - dat250-expass3.md](./dat250-expass3.md)
 - [Week 5 - dat250-expass5.md](./dat250-expass5.md)
+- [Week 6 - dat250-expass6.md](./dat250-expass6.md)
