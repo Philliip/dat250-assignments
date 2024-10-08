@@ -33,6 +33,11 @@ The result was that each worker terminal had two ouputs: `[x] Received 'TaskNew'
 
 
 ##  Exercise 4 - Topics
+In last exercise i got experience with full messaging model of rabitMQ. This exercise introducted another concpet of exchange. Exchange accepts taks from producer and then based on specific rules it pushes it to particular queues. To simulate this behaviour i used code in file [EmitLog.java](./assignment_6/src/main/java/hvl/dat_250/EmitLog.java). Mentioned file behaves similar as `NewTask.java`, send some task. File that produce exchange element is [ReceiveLogs.java](./assignment_6/src/main/java/hvl/dat_250/ReceiveLogs.java). During the executing of program, i specified output to be stored into file `logs_from_rabbit.log`.
+I did not push it into GitHub because pushing `.log` files is not a good practice. 
+Both program were ran analogically to previous programs. 
 
-Code for additional experiments is in directory [assignment_6](./assignment_6).
+## Conclusion
+During my work on this assignment i did not experience any issues. I managed to go through all exercises and there no pending issues on my side. Overall assignmment was exciting.
+
 
