@@ -20,6 +20,17 @@ java -cp .:amqp-client-5.21.0.jar:slf4j-api-1.7.36.jar:slf4j-simple-1.7.36.jar h
 The result of this procedure was receiving message in `Recv` terminal and the message was `[x] Received 'Hello World!'`.
 
 ## Exercise 3 - Work Queue
+In this exercise i got in touch with queues, sending tasks to queue and sending tasks to workers from queue. To send a task to queue i used code in file [NewTask.java](./assignment_6/src/main/java/hvl/dat_250/NewTask.java) and to define workers i used code in file [Worker.java](./assignment_6/src/main/java/hvl/dat_250/Worker.java). To test out this setup i used four terminal tabs. In three of them i "spawned" workers with command
+```
+java -cp .:amqp-client-5.21.0.jar:slf4j-api-1.7.36.jar:slf4j-simple-1.7.36.jar hvl.dat_250.Worker
+
+```
+From the remaining terminal tab i sent tasks to the queue with command which i repreated 6 times.
+```
+java -cp .:amqp-client-5.21.0.jar:slf4j-api-1.7.36.jar:slf4j-simple-1.7.36.jar hvl.dat_250.NewTask TaskNew
+```
+The result was that each worker terminal had two ouputs: `[x] Received 'TaskNew'`
+
 
 ##  Exercise 4 - Topics
 
