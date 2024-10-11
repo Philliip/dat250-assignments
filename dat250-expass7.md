@@ -22,4 +22,24 @@ value and by defualt postgres creates a user `postgres`.
 - after gettign initial SQL scripts and ran the container with mounted directory i managed to successfully run the unit tests as before.
 <img width="1274" alt="image" src="https://github.com/user-attachments/assets/be589ecd-45c7-44d4-964b-6dfa3329d12e">
 
+The code for this exercise is available in this [repository](https://github.com/Philliip/dat250-jpa-tutorial)
 
+## Building my own dockerized application
+
+My docker image looked like this:
+```
+FROM eclipse-temurin:21
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+```
+
+To build the image i used command:
+```
+docker build --build-arg JAR_FILE=build/libs/\*.jar -t dat_250_image .
+```
+
+And finally to run the container i used command:
+```
+docker run -p 8080:8080 dat_250_image
+```
